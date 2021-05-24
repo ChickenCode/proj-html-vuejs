@@ -1,0 +1,38 @@
+.my-jumbotron {
+    background-image: linear-gradient(to right, black, #0e0e11);
+    height: 500px;
+}
+
+.inter-jumbotron {
+    background-image: url("/imgs/fitness_thumbnail.jpg");
+    background-repeat: no-repeat;
+    background-position: right ;
+    height: 500px;
+    position: relative;
+}
+
+.on-video-clicks {
+    position: absolute;
+    right: 20px;
+    top: 40px;
+
+    div {
+        padding: 2px 5px 0;
+        background-color: white;
+        border-radius: 5px;
+
+        p {
+            font-size: 0.7em;
+            color: black;
+        }
+    }
+}
+
+@import "mixins.scss";
+
+.blue-btn-1 {
+    @include myButton1
+}
+
+
+
