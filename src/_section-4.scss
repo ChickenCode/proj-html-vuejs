@@ -1,0 +1,19 @@
+@import "variables.scss";
+@import "mixins.scss";
+
+.section-4 {
+    img {
+        @include three-images;    
+    }
+
+    .description {
+        @include three-images;
+    }
+
+    .playbutton-background {
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+}

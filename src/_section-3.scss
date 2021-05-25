@@ -1,0 +1,12 @@
+@import "variables.scss";
+@import "mixins.scss";
+
+.section-3 {
+    p, h2 {
+        color: black;
+    }
+
+    .col-md-6 {
+        padding: 3%;
+    }
+}

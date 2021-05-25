@@ -1,0 +1,21 @@
+@import "variables.scss";
+@import "mixins.scss";
+
+.section-2 {
+    background-image: linear-gradient(150deg, $blue, $red);
+    padding-bottom: 100px;
+    color: $white;
+
+        .container img {
+            @include three-images;
+            transform: translateY(-50px);
+        }
+
+}
+
+.motivational {
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+}
+

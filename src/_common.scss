@@ -1,15 +1,43 @@
 @import "variables.scss";
+@import "mixins.scss";
 
-h1, h4, p, span {
-    color: white;
+.playbutton-background { 
+    @include play-background;
+}
+
+.playbutton {
+    position: absolute; 
+    top: 50%; 
+    left: 50%; 
+    transform: translate(-50%, -50%);
+    color: $blue;
+}
+
+a {
+    text-decoration: none !important;
+}
+
+.white {
+    color: $white;
 }
 
 .red {
     color: red;
 }
 
-.lightgray {
-    color: lightgray;
-    opacity: 0.8;
+.blue {
+    color: $blue;
+}
+
+.darkgray {
+    color: $darkgray;
+}
+
+.small-font {
+    font-size: 0.8em;
+}
+
+.clear {
+    opacity: 0.5;
 }
 

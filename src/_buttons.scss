@@ -1,0 +1,19 @@
+@import "variables.scss";
+@import "mixins.scss";
+
+
+.btn-1 {
+    @include myButton1;
+    background-color: $blue;
+}
+
+.btn-2 {
+    @include myButton1;
+    border: 2px solid $darkgray;
+}
+
+.btn-3 {
+    @include myButton1;
+    background-color: red; 
+    display: inline-block;
+}

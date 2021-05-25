@@ -1,3 +1,10 @@
+@import "variables.scss";
+@import "mixins.scss";
+
+header ul {
+    list-style: none;
+}
+
 .my-jumbotron {
     background-image: linear-gradient(to right, black, #0e0e11);
     height: 500px;
@@ -28,11 +35,13 @@
     }
 }
 
-@import "mixins.scss";
-
-.blue-btn-1 {
-    @include myButton1
+header .playbutton-background {
+    top: 50%; 
+    right: 15%; 
 }
+
+
+
 
 
 
