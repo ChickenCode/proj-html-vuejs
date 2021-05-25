@@ -7,15 +7,14 @@ header ul {
 
 .my-jumbotron {
     background-image: linear-gradient(to right, black, #0e0e11);
-    height: 500px;
 }
 
 .inter-jumbotron {
     background-image: url("/imgs/fitness_thumbnail.jpg");
     background-repeat: no-repeat;
     background-position: right ;
-    height: 500px;
     position: relative;
+    padding: 100px 0 120px;
 }
 
 .on-video-clicks {

@@ -1,0 +1,16 @@
+@import "variables.scss";
+@import "mixins.scss";
+
+.section-5 {
+    .w-60 {
+        width: 60%;
+    }
+}
+
+.inter-jumbotron-2 {
+    background-image: url("/imgs/fitness_thumbnail.jpg");
+    background-repeat: no-repeat;
+    background-position: right ;
+    position: relative;
+    padding: 100px 0 120px;
+}
