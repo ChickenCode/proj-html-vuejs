@@ -1,6 +1,19 @@
 @import "variables.scss";
 @import "mixins.scss";
 
+header {
+    background-color: black;
+}
+
+nav {
+    height: 80px;
+    padding-top: 10px;
+
+    ul li{
+        margin: 0 15px;
+    }
+}
+
 header ul {
     list-style: none;
 }
@@ -39,8 +52,19 @@ header .playbutton-background {
     right: 15%; 
 }
 
+.new {
+    background-color: yellow;
+    padding: 3px 8px;
+    border-radius: 3px;
+}
 
-
+.my-search {
+    border-radius: 50px;
+    padding: 0 5px;
+    &::placeholder {
+        padding-left: 10px;
+    }
+}
 
 
 

@@ -2,11 +2,64 @@
 @import "mixins.scss";
 
 .section-3 {
-    p, h2 {
+    h2 {
+        margin-bottom: 30px;
+    }
+
+    h2 {
         color: black;
     }
 
-    .col-md-6 {
-        padding: 3%;
+    .advice {
+        padding: 5%;
+    }
+
+    .themefusion {
+        color: $darkgray;
+        font-weight: 550;
+    }
+
+    .youtube-channel {
+        background-color: red;
+        display: inline-block;
+    }
+
+    .followers {
+        display: inline-block;
+        padding: 20px;
+    }
+
+    .border-1 {
+        border: 1px solid $silver;
+        padding: 0;
+    }
+
+    .arcu {
+        margin: 30px 0;
+        color: $darkgray;
+        font-size: 1.1em;
+    }
+}
+
+@media screen and (max-width: 990px) {
+    .section-3 {
+
+        .advice{
+            align-items: center;
+            text-align: center;
+        }
+
+        .themefusion {
+            text-align: left;
+        }
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .section-3 {
+    
+        .advice {
+            padding: 1%;
+        }
     }
 }

@@ -1,6 +1,9 @@
 new Vue({
     el: "#root",
     data: {
+        email: "",
+        myInput: "",
+        search: false,
         posts: [
             {
                 title: "First random title"
@@ -62,5 +65,24 @@ new Vue({
         ]
     },
     
+    methods: {
+        preventDefault() {
+            event.preventDefault()
+        },
+
+        openSearch() {
+            if (!this.search) {
+                this.search = true
+            }
+
+            else {
+                this.search = false
+            }
+        },
+
+        setEmail() {
+            this.email = this.myInput
+        }
+    }
     
 })

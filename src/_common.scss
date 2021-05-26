@@ -42,11 +42,36 @@ a {
     color: $darkgray;
 }
 
+.yellow {
+    color: yellow;
+}
+
+.silver {
+    color: $silver;
+}
+
+.smaller-font {
+    font-size: 0.9em;
+}
+
 .small-font {
     font-size: 0.8em;
 }
 
+.smallest-font {
+    font-size: 0.7em;
+}
+
+.black {
+    color: black;
+}
+
+
 .clear {
     opacity: 0.5;
+}
+
+.bold {
+    font-weight: bold;
 }
 
