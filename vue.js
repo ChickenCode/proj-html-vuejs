@@ -21,7 +21,7 @@ new Vue({
                 title: "Eating bananas is dangerous for your health"
             },
             {
-                title: "The best protein shake"
+                title: "20 best healthy recipies"
             },
             {
                 title: "Tips to find training partners"
@@ -33,7 +33,7 @@ new Vue({
                 title: "Ultimate cardio workout"
             },
             {
-                title: "20 best healthy recipies"
+                title: "The best protein shake"
             },
         ],
 
@@ -64,7 +64,7 @@ new Vue({
             },
         ]
     },
-    
+
     methods: {
         preventDefault() {
             event.preventDefault()
@@ -81,8 +81,28 @@ new Vue({
         },
 
         setEmail() {
-            this.email = this.myInput
+            if (this.myInput.indexOf("@") == -1) {
+                alert("Per essere valida l'email inserita deve contenere il simbolo @")
+            }
+
+            else if (this.myInput.indexOf(".") == -1) {
+                alert("Per essere valida l'email inserita deve contenere il simbolo .")
+            }
+
+            else if (this.myInput.length < 8) {
+                alert("Per essere validmyInput inserita deve contenere almeno 8 caratteri")
+            }
+
+            else if (this.myInput.includes(" ")) {
+                alert("Per essere valida l'email inserita non deve contenere spazi")
+            }
+
+            else {
+                this.email = this.myInput
+            }
+
+
         }
     }
-    
+
 })

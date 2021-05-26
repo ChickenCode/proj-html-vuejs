@@ -1,2 +1,11 @@
 @import "variables.scss";
 @import "mixins.scss";
+
+.section-9 {
+padding: 100px 0;
+
+    img {
+        width: 200px;
+        height: 100px;
+    }
+}

@@ -44,6 +44,7 @@ a {
 
 .yellow {
     color: yellow;
+    
 }
 
 .silver {
@@ -66,6 +67,14 @@ a {
     color: black;
 }
 
+.left-chev {
+    transform: translateX(3.3px);
+}
+
+.right-chev{
+    transform: translateX(-3.3px);
+}
+
 
 .clear {
     opacity: 0.5;
@@ -73,5 +82,19 @@ a {
 
 .bold {
     font-weight: bold;
+}
+
+.newblack {
+    color: $newblack;
+}
+
+.w-70 {
+    width: 70%;
+}
+
+.playbutton-background, .play-me {
+    &:hover {
+        cursor: pointer;
+    }
 }
 

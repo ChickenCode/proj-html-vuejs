@@ -1,2 +1,41 @@
 @import "variables.scss";
 @import "mixins.scss";
+
+
+footer {
+    padding: 100px 0;
+    background-color: black;
+
+    .articles {
+        &:hover{
+        text-decoration: underline;
+        cursor: pointer;
+        }
+    }
+
+    ul {
+        list-style: none;
+        padding: 0;
+    }
+
+    
+        
+            .socials li{
+            display: inline-block;
+            margin: 2px;
+                a{
+                    color: red;
+                    i{
+                    &:hover {
+                        transform: scale(1.2);
+                    }
+                }
+                }
+            }
+    }
+
+.footer-bot {
+    padding: 20px;
+    background-color: black;
+    border-top: 1px solid rgb(53, 53, 53);
+}

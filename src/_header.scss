@@ -3,6 +3,12 @@
 
 header {
     background-color: black;
+
+    a {
+        &:hover {
+            color: white;
+        }
+    }
 }
 
 nav {
@@ -11,6 +17,13 @@ nav {
 
     ul li{
         margin: 0 15px;
+    }
+
+    i {
+        &:hover {
+            color: white;
+            transform: scale(1.1);
+        }
     }
 }
 
@@ -40,6 +53,11 @@ header ul {
         background-color: white;
         border-radius: 5px;
 
+        &:hover {
+            transform: scale(1.1);
+            cursor: pointer;
+        }
+
         p {
             font-size: 0.7em;
             color: black;
@@ -60,9 +78,9 @@ header .playbutton-background {
 
 .my-search {
     border-radius: 50px;
-    padding: 0 5px;
+    padding: 0px 100px;
     &::placeholder {
-        padding-left: 10px;
+        text-align: center;
     }
 }
 
