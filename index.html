@@ -7,19 +7,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.12/dist/vue.js"></script>
     <link rel="stylesheet" href="dist/app.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 </head>
-<div id="root"></div>
+
+<div id="root">
 
 <body>
     <header>
         <div class="container">
             <!--Navbar-->
-            <nav class="d-flex">
+            <nav class="d-flex justify-content-between">
                 <!--Logo (Navbar)-->
 
                 <div>
@@ -29,14 +31,11 @@
                 <!--Navigation (Navbar)-->
                 <div>
                     <ul class="d-flex">
-                        <li>Home</li>
-                        <li>Services</li>
-                        <li>About</li>
-                        <li>Videos</li>
-                        <li>Blog</li>
-                        <li>Store <span>new</span></li>
+                        <li v-for="element in navbar">
+                            <a href="">{{element.link}}</a> <span v-if="element.add" class="d-inline-block">{{element.add}}</span>
+                        </li>
                         <li>
-                            <button>Schedule a workout</button>
+                            <a href="">Schedule a workout</a> 
                         </li>
                         <li>
                             <i class="fa fa-shopping-cart" aria-hidden="true"></i>
@@ -346,10 +345,53 @@
     </main>
 
     <footer>
+        <section class="footer-top row text-center">
+            <div class="col-12 col-lg-4">
+                <img src="" alt=""> <span>logo</span>
+                <p>Ac aliquam neque sagittis diam facibus vitae purus turpis phasellus. Pellentesque conoscetur amet purus ultrices mauris</p>
+                <ul>
+                    <li>
+                        <a href=""><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                    </li>
+                    <li>
+                        <a href=""><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                    </li>
+                    <li>
+                        <a href=""><i class="fa fa-youtube-play" aria-hidden="true"></i></a>
+                    </li>
+                    <li>
+                        <a href=""><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                    </li>
+                    <li>
+                        <a href=""><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+                    </li>
+                </ul>
+            </div>
 
+            <div class="col-12 col-lg-4">
+                <h4>RECENT POSTS</h4>
+                <ul>
+                    <li v-for="post in posts.slice(posts.length - 5, posts.length)">
+                        <i class="fa fa-chevron-right" aria-hidden="true"></i> {{post.title}}
+                    </li>
+                </ul>
+            </div>
+
+            <div class="col-12 col-lg-4">
+                <h4>CONTACT INFORMATIONS</h4>
+                <p>4746 Tipple Road Michigan 48449</p>
+                <p>Mobile: 1.800.000.000</p>
+                <p>Email: info@your-company.com</p>
+            </div>
+        </section>
+
+        <section class="footer-bot">
+
+        </section>
     </footer>
-
 </body>
 </div>
 
+<script src="vue.js"></script>
+    ©copyright 2012-2020 | Avada theme by <span>ThemeFusion</span> | All rights reserved | powered by <span>WordPress</span>
 </html>
