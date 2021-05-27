@@ -7,6 +7,7 @@ footer {
     background-color: black;
 
     .articles {
+        color: $silver;
         &:hover{
         text-decoration: underline;
         cursor: pointer;
