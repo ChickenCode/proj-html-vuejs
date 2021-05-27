@@ -17,8 +17,8 @@
 }
 
 .inter-jumbotron-2 {
-    background-image: url("/imgs/fitness_thumbnail.jpg");
-    background-repeat: no-repeat;
+    background-image: linear-gradient(90deg, rgb(6, 6, 7) 47%, rgba(6, 6, 7, 0) 76%), url("https://avada.theme-fusion.com/fitness/wp-content/uploads/sites/130/2019/11/banner1@2x.jpg"); 
+    background-size: cover;
     background-position: right ;
     position: relative;
     padding: 100px 0 120px;

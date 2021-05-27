@@ -1,6 +1,10 @@
 @import "variables.scss";
 @import "mixins.scss";
 
+* {
+    font-family: "Barlow Semi Condensed", Arial, Helvetica, sans-serif
+}
+
 .playbutton-background { 
     @include play-background;
 }
@@ -95,6 +99,18 @@ a {
 .playbutton-background, .play-me {
     &:hover {
         cursor: pointer;
+    }
+}
+
+.last-button{
+    &:hover {
+        cursor: pointer;
+    }
+}
+
+.hoverblue {
+    &:hover {
+        color: $blue;
     }
 }
 

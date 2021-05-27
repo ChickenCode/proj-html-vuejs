@@ -11,7 +11,7 @@
     }
 
     .advice {
-        padding: 5%;
+        padding: 100px;
     }
 
     .themefusion {
@@ -48,22 +48,9 @@
 @media screen and (max-width: 990px) {
     .section-3 {
 
-        .advice{
-            align-items: center;
-            text-align: center;
-        }
 
         .themefusion {
             text-align: left;
-        }
-    }
-}
-
-@media screen and (max-width: 1200px) {
-    .section-3 {
-    
-        .advice {
-            padding: 1%;
         }
     }
 }

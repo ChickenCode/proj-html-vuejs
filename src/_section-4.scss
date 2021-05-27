@@ -2,16 +2,14 @@
 @import "mixins.scss";
 
 .section-4 {
+    padding: 50px 0;
+
     img {
         @include three-images;    
     }
 
-    .description {
-        @include three-images;
-    }
-
     .playbutton-background {
-        top: 50%;
+        top: 40%;
         left: 50%;
         transform: translate(-50%, -50%);
     }
