@@ -64,7 +64,7 @@ new Vue({
             },
         ]
     },
-
+    
     methods: {
         preventDefault() {
             event.preventDefault()
@@ -100,9 +100,9 @@ new Vue({
             else {
                 this.email = this.myInput
             }
-
-
+            
+            
         }
     }
-
+    
 })
