@@ -12,17 +12,26 @@ header {
 }
 
 nav {
-    /*height: 80px;
-    padding-top: 10px;*/
+    height: 100px;
 
     ul li{
         margin: 0 15px;
+
+        &:hover {
+            transform: scale(1.2);
+        }
+
+        a {
+            &:hover{
+                color: white !important;
+            }
+        }
     }
 
     i {
         &:hover {
-            color: white;
-            transform: scale(1.1);
+            color: white !important;
+            transform: scale(1.5);
         }
     }
 }
@@ -76,6 +85,10 @@ header .playbutton-background {
     background-color: yellow;
     padding: 5px 10px;
     border-radius: 3px;
+
+     &:hover {
+         color: black !important;
+     }
 }
 
 .my-search {
