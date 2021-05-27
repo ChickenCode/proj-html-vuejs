@@ -19,10 +19,51 @@
 
     <body>
         <header>
+
             <div class="container">
-                <!--Navbar-->
+                <nav class="navbar navbar-expand-xl navbar-dark">
+                    <a href="#" class="navbar-brand"><img src="https://avada.theme-fusion.com/fitness/wp-content/uploads/sites/130/2021/04/logo-svg.svg" alt=""></a>
+
+                    <button class="navbar-toggler" 
+                    type="button" 
+                    data-bs-toggle="collapse" 
+                    data-bs-target="toggleMobileMenu"
+                    aria-expanded="false"
+                    aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+
+                    <div class="collapse navbar-collapse" id="toggleMobileMenu">
+                        <ul class="navbar-nav ms-auto text-right z">
+                            <li v-for="element in navbar" v-if="search == false">
+                                <a href="" class="nav-link silver">{{element.link}}</a>
+                            </li>
+                            <li v-if="search == false" class="nav-link" style="margin: 0; transform: translateX(-25px);">
+                                <a href="" class="black new smallest-font">New</a> 
+                            </li>
+                            <li v-if="search == false"  style="margin-left: 0;">
+                                <a href="" class="nav-link white btn-1 small-font my-btn-1 px-4">Schedule a workout</a>
+                            </li>
+                            <li v-if="search == false">
+                                <a href=""><i class="nav-link silver fa fa-shopping-cart" aria-hidden="true"></i></a>
+                            </li>
+                            <li v-if="search">
+                                <input type="text" placeholder="Search for items..." name="" id="" class="my-search"
+                                    @blur="openSearch()">
+                            </li>
+                            <li>
+                                <a href=""><i class="nav-link silver fa fa-search" aria-hidden="true"
+                                        @click.prevented="preventDefault(), openSearch()"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+            
+            <!--
+                <div class="container">
                 <nav class="d-flex justify-content-between align-items-center">
-                    <!--Logo (Navbar)-->
+                    
 
                     <div>
                         <a href="">
@@ -30,8 +71,11 @@
                         </a>
                     </div>
 
-                    <!--Navigation (Navbar)-->
-                    <div class="d-flex">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                      </button>
+
+                    <div class="d-flex" >
                         <ul class="d-flex">
                             <li v-for="element in navbar" v-if="search == false">
                                 <a href="" class="silver">{{element.link}}</a> <span v-if="element.add"
@@ -54,7 +98,8 @@
                         </ul>
                     </div>
                 </nav>
-            </div>
+            </div> 
+            -->
 
             <!--Jumbotron-->
 
